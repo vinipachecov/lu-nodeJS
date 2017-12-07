@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-test-app",
+  "version": "1.0.0",
+  "description": "NodeJs Test App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "moment": "^2.19.3",
+    "mongoose": "^4.13.6"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}

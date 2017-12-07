@@ -3,10 +3,8 @@ var fs = require('fs');
 
 http.createServer(function (req, res) {
 
-
-
     switch (req.url) {
-        case '/api':
+        case '/json':
             res.writeHead(200, {
                 'context-Type': 'application/json'
             });
@@ -22,8 +20,9 @@ http.createServer(function (req, res) {
             fs.createReadStream(__dirname + '/index.html').pipe(res);
             break;
         default:
-            res.writeHead(404);
-            res.end();
+            console.log(req.url);   
+            // res.writeHead(404);         
+            fs.createReadStream(__dirname + '/404.html').pipe(res);            
             break;
     }
 
